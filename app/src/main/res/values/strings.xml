@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TandemCommunity</string>
+    <string name="native_txt">NATIVE</string>
+    <string name="learns_txt">LEARNS</string>
+</resources>
