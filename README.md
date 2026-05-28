@@ -55,7 +55,7 @@ Single source of truth for UI state, Immutable UI state models, Unidirectional d
 
 Handles all data sources, Responsible for: API calls, Room database operations, Mapping between DTO <> Entity <> Domain models, Data Sources, 
 
-Remote: Weather API
+Remote: Tandem Community API
 
 Local: Room Database (offline & caching support)
 
@@ -105,16 +105,15 @@ I used Retrofit for network calls, Mockk for mocking dependencies, Hilt for DI, 
 
 
 
-Let's talk about what I implemented, and what works and what may not.
-As I mentioned earlier, the focus was on archiecture and approach.
+Let's talk about what I implemented. As I mentioned earlier, the focus was on archiecture and approach.
 
 The App :
 -> Shows list of Community Members
 -> User can like and unlike the member 
 
 What App missed:
--> I have skipped the loaders and emoty state scenarios for sake of assignment project since the purpose was to show scalable and testable architecture
--> dimensions are hardcoded, which normally stays in a defined file
+-> I have skipped the loaders and empty state scenarios for sake of assignment project since the purpose was to show scalable and testable architecture
+-> dimensions/ dp units are hardcoded, which normally stays in a defined file
 
 I have implemented Code coverage with the help of Jacoco, and Kover could have been another option, but I choosed Jacoco because of stability. The intentionally left alot of stuff in code coverage so that we can see a comprehensive bad report to discuss, if need to. Also, for this small assignment even industry standard of 60-70% coverage is not required, its my personal opinion.
 
